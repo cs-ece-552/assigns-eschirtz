@@ -58,8 +58,8 @@ module barrelShifter_hier_bench;
             begin
                Expected = In << Cnt | In >> 16-Cnt;
 
-               if (Expected[15:0] !== Out) begin
-                  $display("ERRORCHECK :: Shifter :: Rotate Left       : Count : %d, In = %x ; Expected : %x, Got %x", Cnt, In, Expected[15:0], Out);
+               if (Expected[15:0] != Out) begin
+                  $display("ERRORCHECK :: BarrelShifter :: Rotate Left       : Count : %d, In = %x ; Expected : %x, Got %x", Cnt, In, Expected[15:0], Out);
                   fail = 1;
                end
             end
@@ -68,8 +68,8 @@ module barrelShifter_hier_bench;
             begin
                Expected = In << Cnt;
 
-               if (Expected[15:0] !== Out) begin
-                  $display("ERRORCHECK :: Shifter :: Shift Left        : Count : %d, In = %x ; Expected : %x, Got %x", Cnt, In, Expected[15:0], Out);
+               if (Expected[15:0] != Out) begin
+                  $display("ERRORCHECK :: BarrelShifter :: Shift Left        : Count : %d, In = %x ; Expected : %x, Got %x", Cnt, In, Expected[15:0], Out);
                   fail = 1;
                end
             end
@@ -81,9 +81,8 @@ module barrelShifter_hier_bench;
 
                Expected[15:0] = In[15:0];
                Expected[15:0] = Expected >> Cnt;
-
-               if (Expected[15:0] !== Out) begin
-                  $display("ERRORCHECK :: Shifter :: Shift Right Arith : Count : %d, In = %x ; Expected : %x, Got %x", Cnt, In, Expected[15:0], Out);
+               if (Expected[15:0] != Out) begin
+                  $display("ERRORCHECK :: BarrelShifter :: Shift Right Arith : Count : %d, In = %x ; Expected : %x, Got %x", Cnt, In, Expected[15:0], Out);
                   fail = 1;
                end
             end
@@ -92,12 +91,12 @@ module barrelShifter_hier_bench;
             begin
                Expected = In >> Cnt;
 
-               if (Expected[15:0] !== Out) begin
-                  $display("ERRORCHECK :: Shifter :: Shift Right Logic : Count : %d, In = %x ; Expected : %x, Got %x", Cnt, In, Expected[15:0], Out);
+               if (Expected[15:0] != Out) begin
+                  $display("ERRORCHECK :: BarrelShifter :: Shift Right Logic : Count : %d, In = %x ; Expected : %x, Got %x", Cnt, In, Expected[15:0], Out);
                   fail = 1;
                end
             end
         endcase
      end
    
-endmodule // tb_shifter
+endmodule // tb_barrelShifter

@@ -31,13 +31,13 @@ module barrelShifter_hier(In, Cnt, Op, Out);
              .err                       (err)
             );
 
-   shifter s0(
-              // Outputs
-              .Out                      (Out),
-              // Inputs
-              .In                       (In),
-              .Cnt                      (Cnt),
-              .Op                       (Op)
-             );
+   barrelShifter s0(
+                    // Outputs
+                    .Out                      (Out),
+                    // Inputs
+                    .In                       (In),
+                    .Cnt                      (Cnt),
+                    .Op                       (Op)
+                    );
    
 endmodule // shifter_hier

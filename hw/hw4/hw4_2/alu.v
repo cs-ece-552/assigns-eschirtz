@@ -9,12 +9,12 @@
     of the operation, as well as output a Zero bit and an Overflow
     (OFL) bit.
 */
-module alu (A, B, Cin, Op, invA, invB, sign, Out, Ofl, Z);
+module alu (A, B, Cin, Op, invA, invB, sign, Out, Zero, Ofl);
 
    // declare constant for size of inputs, outputs (N),
    // and operations (O)
    parameter    N = 16;
-   parameter    O = 2;
+   parameter    O = 3;
    
    input [N-1:0] A;
    input [N-1:0] B;
@@ -25,7 +25,7 @@ module alu (A, B, Cin, Op, invA, invB, sign, Out, Ofl, Z);
    input         sign;
    output [N-1:0] Out;
    output         Ofl;
-   output         Z;
+   output         Zero;
 
    /* YOUR CODE HERE */
     

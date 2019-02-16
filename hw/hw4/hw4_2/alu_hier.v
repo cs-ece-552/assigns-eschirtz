@@ -4,12 +4,12 @@
 
     A 16-bit ALU module combined with clkrst.
 */
-module alu_hier(A, B, Cin, Op, invA, invB, sign, Out, Ofl, Z);
+module alu_hier(A, B, Cin, Op, invA, invB, sign, Out, Ofl, Zero);
 
    // declare constant for size of inputs, outputs (N),
    // and operations (O)
    parameter    N = 16;
-   parameter    O = 2;
+   parameter    O = 3;
 
    input [N-1:0] A;
    input [N-1:0] B;
@@ -20,7 +20,7 @@ module alu_hier(A, B, Cin, Op, invA, invB, sign, Out, Ofl, Z);
    input sign;
    output [N-1:0] Out;
    output Ofl;
-   output Z;
+   output Zero;
 
    wire clk;
    wire rst;
@@ -40,7 +40,7 @@ module alu_hier(A, B, Cin, Op, invA, invB, sign, Out, Ofl, Z);
           // Outputs
           .Out                          (Out[15:0]),
           .Ofl                          (Ofl),
-          .Z                            (Z),
+          .Zero                         (Zero),
           // Inputs
           .A                            (A[15:0]),
           .B                            (B[15:0]),

@@ -11,17 +11,17 @@ module alu_hier_bench;
    reg         sign;
    wire [15:0] Out;
    wire        Ofl;
-   wire        Z;
+   wire        Zero;
 
    reg         fail;
 
    reg         cerror;
    reg [31:0]  ExOut;
    reg         ExOfl;
-   reg         ExZ;
+   reg         ExZero;
    integer     idx;
    
-   alu_hier DUT (.A(A_pre_inv), .B(B_pre_inv), .Cin(Cin), .Op(Op), .invA(invA), .invB(invB), .sign(sign), .Out(Out), .Ofl(Ofl), .Z(Z));
+   alu_hier DUT (.A(A_pre_inv), .B(B_pre_inv), .Cin(Cin), .Op(Op), .invA(invA), .invB(invB), .sign(sign), .Out(Out), .Ofl(Ofl), .Zero(Zero));
    
    initial
      begin
@@ -62,23 +62,22 @@ module alu_hier_bench;
      begin
         cerror = 1'b0;
         ExOut = 32'h0000_0000;
-        ExZ = 1'b0;
+        ExZero = 1'b0;
         ExOfl = 1'b0;
 
         case (Op)
-
           3'b000 :
             // Rotate Left
             begin
                ExOut = A << B[3:0] | A >> 16-B[3:0];
-               if (ExOut[15:0] !== Out)
+               if (ExOut[15:0] != Out)
                  cerror = 1'b1;
             end
           3'b001 :
             // Shift Left
             begin
                ExOut = A << B[3:0];
-               if (ExOut[15:0] !== Out)
+               if (ExOut[15:0] != Out)
                  cerror = 1'b1;
             end
           3'b010 :
@@ -88,7 +87,7 @@ module alu_hier_bench;
                  ExOut[idx] = A[15];
                ExOut[15:0] = A[15:0];
                ExOut[15:0] = ExOut >> B[3:0];
-               if (ExOut[15:0] !== Out)
+               if (ExOut[15:0] != Out)
                  cerror = 1'b1;
                
             end
@@ -96,7 +95,7 @@ module alu_hier_bench;
             // Right shift logical
             begin
                ExOut = A >> B[3:0];
-               if (ExOut[15:0] !== Out)
+               if (ExOut[15:0] != Out)
                  cerror = 1'b1;
             end
 
@@ -105,13 +104,13 @@ module alu_hier_bench;
             begin
                ExOut = A + B + Cin;
                if (ExOut[15:0] == 16'h0000)
-                 ExZ = 1'b1;
+                 ExZero = 1'b1;
                if (sign == 1'b1)
                  ExOfl = ExOut[15]^A[15]^B[15]^ExOut[16];
                else
                  ExOfl = ExOut[16];
                
-               if ((ExOut[15:0] !== Out) || (ExZ !== Z) || (ExOfl !== Ofl))
+               if ((ExOut[15:0] != Out) || (ExZero != Zero) || (ExOfl != Ofl))
                  cerror = 1'b1;
             end
           
@@ -119,28 +118,27 @@ module alu_hier_bench;
             // A AND B
             begin
                ExOut = A & B;
-               if (ExOut[15:0] !== Out)
+               if (ExOut[15:0] != Out)
                  cerror = 1'b1;
             end          
-
           3'b110 :
             // A OR B
             begin
                ExOut = A | B;
-               if (ExOut[15:0] !== Out)
+               if (ExOut[15:0] != Out)
                  cerror = 1'b1;
             end
           3'b111 :
             // A XOR B
             begin
                ExOut = A ^ B;
-               if (ExOut[15:0] !== Out)
+               if (ExOut[15:0] != Out)
                  cerror = 1'b1;
             end
         endcase // case (Op)
         
         if (cerror == 1'b1) begin
-           $display("ERRORCHECK :: ALU :: Inputs :: Op = %d , A = %x, B = %x, Cin = %x, invA = %x, invB = %x, sign = %x :: Outputs :: Out = %x, Ofl = %x, Z = %z :: Expected :: Out = %x, Ofl = %x, Z = %x", Op, A_pre_inv, B_pre_inv, Cin, invA, invB, sign, Out, Ofl, Z, ExOut[15:0], ExOfl, ExZ);
+           $display("ERRORCHECK :: ALU :: Inputs :: Op = %d , A = %x, B = %x, Cin = %x, invA = %x, invB = %x, sign = %x :: Outputs :: Out = %x, Ofl = %x, Zero = %z :: Expected :: Out = %x, ExOfl = %x, ExZero = %x", Op, A_pre_inv, B_pre_inv, Cin, invA, invB, sign, Out, Ofl, Zero, ExOut[15:0], ExOfl, ExZero);
            fail = 1;
         end
      end

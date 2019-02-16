@@ -22,4 +22,3 @@ module barrelShifter (In, Cnt, Op, Out);
    /* YOUR CODE HERE */
    
 endmodule
-
