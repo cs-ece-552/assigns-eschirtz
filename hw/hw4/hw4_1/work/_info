@@ -1,0 +1,225 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vbarrelShifter
+!s110 1550450524
+!i10b 1
+!s100 W13cOm2Z2a3E:2OK0>LaR0
+IWi^=?:WHB6JBJI3kOAbjG3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1
+w1550450520
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter.v
+Z2 L0 10
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1550450524.000000
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter.v|
+!s101 -O0
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+nbarrel@shifter
+vbarrelShifter_hier
+Z5 !s110 1550450332
+!i10b 1
+!s100 n?JMgK5?_6XM5?dH`Vl:k0
+ImJHNo64T<Z8AI054TYb9B1
+R0
+R1
+Z6 w1550437911
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier.v
+L0 8
+R3
+r1
+!s85 0
+31
+Z7 !s108 1550450332.000000
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier.v|
+!s101 -O0
+!i113 1
+R4
+nbarrel@shifter_hier
+vbarrelShifter_hier_bench
+R5
+!i10b 1
+!s100 bFCaW[jf@PY3kN[O^IRdj0
+IKjkJ=^;24WRH[YT=R@bU@0
+R0
+R1
+R6
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v
+R2
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v|
+!s101 -O0
+!i113 1
+R4
+nbarrel@shifter_hier_bench
+vclkrst
+R5
+!i10b 1
+!s100 j<IRi>D@FCm?EC>kOmYlT2
+IWC`OE<gaPdldl;?z;>2Pn0
+R0
+R1
+R6
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/clkrst.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/clkrst.v
+L0 12
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/clkrst.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/clkrst.v|
+!s101 -O0
+!i113 1
+R4
+vmux2_1
+R5
+!i10b 1
+!s100 RVnK>3f@Y7[Vz0CZ_On6[3
+I]NB1X6;h6zI3SZ75W8j9F1
+R0
+R1
+w1550445035
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v
+L0 7
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v|
+!s101 -O0
+!i113 1
+R4
+vmux4_1
+Z8 !s110 1550450333
+!i10b 1
+!s100 <e^;2n=B1`DO3T2nYMHZ:0
+Id=c4dn_=1gF<@Dn<dZ2PV1
+R0
+R1
+w1550445043
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v
+L0 7
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v|
+!s101 -O0
+!i113 1
+R4
+vnand2
+Z9 !s110 1550450628
+!i10b 1
+!s100 @JLnM_lV[dSoG<b5oFSbC0
+I64ZDW3aG^N:^42EP:=JAK2
+R0
+R1
+Z10 w1550450580
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/nand2.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/nand2.v
+L0 7
+R3
+r1
+!s85 0
+31
+Z11 !s108 1550450628.000000
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/nand2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/nand2.v|
+!s101 -O0
+!i113 1
+R4
+vnot1
+R9
+!i10b 1
+!s100 E;?=8[YGePDM35<9b7^jF3
+IR]2@e62]1hOQkKSjl?0Q]0
+R0
+R1
+R10
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/not1.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/not1.v
+L0 7
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/not1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/not1.v|
+!s101 -O0
+!i113 1
+R4
+vopSel
+R8
+!i10b 1
+!s100 Xez_9i^j6elh_ic6XkbI;0
+Ii9[n<2E[9Og=j4S95DQY10
+R0
+R1
+w1550445344
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v
+L0 5
+R3
+r1
+!s85 0
+31
+!s108 1550450333.000000
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v|
+!s101 -O0
+!i113 1
+R4
+nop@sel
+vshiftLevel
+R5
+!i10b 1
+!s100 FC81eS1:5<<@7m_z;a9Y[1
+IbZoTiMeNlD?B4ZMaU=]N<1
+R0
+R1
+w1550447054
+8C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/shiftLevel.v
+FC:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/shiftLevel.v
+L0 5
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/shiftLevel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/shiftLevel.v|
+!s101 -O0
+!i113 1
+R4
+nshift@level

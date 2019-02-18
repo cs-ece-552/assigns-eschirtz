@@ -1,0 +1,43 @@
+C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux2_1
+
+Top level modules:
+	mux2_1
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module barrelShifter_hier
+
+Top level modules:
+	barrelShifter_hier
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux4_1
+
+Top level modules:
+	mux4_1
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module opSel
+
+Top level modules:
+	opSel
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/clkrst.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/clkrst.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module clkrst
+
+Top level modules:
+	clkrst
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module barrelShifter_hier_bench
+
+Top level modules:
+	barrelShifter_hier_bench
+
+} {} {}}
