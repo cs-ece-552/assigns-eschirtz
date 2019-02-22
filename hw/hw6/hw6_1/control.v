@@ -1,4 +1,4 @@
-s/*
+/*
    CS/ECE 552, Spring '19
    Homework #6, Problem #1
   
@@ -28,7 +28,7 @@ module control (/*AUTOARG*/
    
    // outputs
    output       err;
-   output       RegDst, RegWrite, DMemWrite, DMemEn, ALUSrc2, PCSrc, 
+   output       RegWrite, DMemWrite, DMemEn, ALUSrc2, PCSrc, 
                 MemToReg, DMemDump, Jump;
    output [1:0] RegDst;
    output [2:0] SESel;

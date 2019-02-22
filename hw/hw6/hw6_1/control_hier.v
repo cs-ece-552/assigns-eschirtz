@@ -31,7 +31,7 @@ module control_hier (/*AUTOARG*/
    
    // outputs
    output       err;
-   output       RegDst, RegWrite, DMemWrite, DMemEn, ALUSrc2, PCSrc, 
+   output       RegWrite, DMemWrite, DMemEn, ALUSrc2, PCSrc, 
                 MemToReg, DMemDump, Jump;
    output [1:0] RegDst;
    output [2:0] SESel;

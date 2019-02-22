@@ -8,7 +8,7 @@ module control_hier_bench(/*AUTOARG*/);
    /*AUTOWIRE*/
    // Beginning of automatic wires (for undeclared instantiated-module outputs)
    wire       err;
-   wire       RegDst, RegWrite, DMemWrite,      // From top of control_hier.v
+   wire       RegWrite, DMemWrite,              // From top of control_hier.v
               DMemEn, ALUSrc2, PCSrc,           // From top of control_hier.v
               MemToReg, DMemDump, Jump;         // From top of control_hier.v
    wire [1:0] RegDst;                           // From top of control_hier.v
