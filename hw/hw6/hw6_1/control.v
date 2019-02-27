@@ -14,6 +14,7 @@ module control (/*AUTOARG*/
                 DMemEn,
                 ALUSrc2,
                 PCSrc,
+                PCImm,
                 MemToReg,
                 DMemDump,
                 Jump,
@@ -29,7 +30,7 @@ module control (/*AUTOARG*/
    // outputs
    output       err;
    output       RegWrite, DMemWrite, DMemEn, ALUSrc2, PCSrc, 
-                MemToReg, DMemDump, Jump;
+                PCImm, MemToReg, DMemDump, Jump;
    output [1:0] RegDst;
    output [2:0] SESel;
 
