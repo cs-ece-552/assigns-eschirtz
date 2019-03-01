@@ -1,9 +1,9 @@
-C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v
+C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/xor2.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/xor2.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module mux2_1
+-- Compiling module xor2
 
 Top level modules:
-	mux2_1
+	xor2
 
 } {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -12,19 +12,61 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	barrelShifter_hier
 
-} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/clkrst.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/clkrst.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module mux4_1
+-- Compiling module clkrst
 
 Top level modules:
-	mux4_1
+	clkrst
 
-} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/mux4_1_4b.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/mux4_1_4b.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module opSel
+-- Compiling module mux4_1_4b
 
 Top level modules:
-	opSel
+	mux4_1_4b
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/xor3.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/xor3.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module xor3
+
+Top level modules:
+	xor3
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/shiftLevel.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/shiftLevel.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module shiftLevel
+
+Top level modules:
+	shiftLevel
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/mux4_1_16b.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/mux4_1_16b.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux4_1_16b
+
+Top level modules:
+	mux4_1_16b
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/nor2.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/nor2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module nor2
+
+Top level modules:
+	nor2
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/alu_hier.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/alu_hier.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu_hier
+
+Top level modules:
+	alu_hier
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module barrelShifter_hier_bench
+
+Top level modules:
+	barrelShifter_hier_bench
 
 } {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/clkrst.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/clkrst.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -33,11 +75,88 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	clkrst
 
-} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter_hier_bench.v
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/nor3.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/nor3.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module barrelShifter_hier_bench
+-- Compiling module nor3
 
 Top level modules:
-	barrelShifter_hier_bench
+	nor3
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/nand2.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/nand2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module nand2
+
+Top level modules:
+	nand2
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/opSel.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module opSel
+
+Top level modules:
+	opSel
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux2_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux2_1
+
+Top level modules:
+	mux2_1
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/rca_4b.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/rca_4b.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module rca_4b
+
+Top level modules:
+	rca_4b
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/barrelShifter.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module barrelShifter
+
+Top level modules:
+	barrelShifter
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/mux4_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux4_1
+
+Top level modules:
+	mux4_1
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/fullAdder_1b.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/fullAdder_1b.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module fullAdder_1b
+
+Top level modules:
+	fullAdder_1b
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/rca_16b.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/rca_16b.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module rca_16b
+
+Top level modules:
+	rca_16b
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/alu_hier_bench.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/alu_hier_bench.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu_hier_bench
+
+Top level modules:
+	alu_hier_bench
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/not1.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_1/not1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module not1
+
+Top level modules:
+	not1
+
+} {} {}} C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/alu.v {1 {vlog -work work -stats=none C:/Users/Eric/My_Files/02_School/assigns-eschirtz/hw/hw4/hw4_2/alu.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu
+
+Top level modules:
+	alu
 
 } {} {}}

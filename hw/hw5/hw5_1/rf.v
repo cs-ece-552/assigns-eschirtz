@@ -46,6 +46,9 @@ module rf (
     .InF(reg5out), .InG(reg6out), .InH(reg7out), .S(readReg2Sel), .Out(readData2));
    decoder1_8_16b decoder(.In(writeRegSel), .Out(tempSel));
 
-   assign writeSel = (writeEn == 1'b1) ? tempSel: 8'b00000000; 
+   assign writeSel = (writeEn == 1'b1) ? tempSel: 8'b00000000;
+
+   assign err = (^clk === 1'bx) | (^rst === 1'bx) | (^readReg1Sel === 1'bx) | (^readReg2Sel === 1'bx) | (^writeRegSel === 1'bx)
+                  | (^writeData === 1'bx) | (^writeEn === 1'bx);
 
 endmodule

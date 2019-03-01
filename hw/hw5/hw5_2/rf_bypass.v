@@ -26,10 +26,8 @@ module rf_bypass (
    rf rf1(.readData1(w1), .readData2(w2), .err(err), .clk(clk), .rst(rst), .readReg1Sel(readReg1Sel),
    .readReg2Sel(readReg2Sel), .writeRegSel(writeRegSel), .writeData(writeData), .writeEn(writeEn));
 
-   assign readData1 = (readReg1Sel == writeRegSel) ? writeData : w1;
-   assign readData2 = (readReg2Sel == writeRegSel) ? writeData : w2;
-   // assign readData1 = (writeEn == 1'b0) ? w1
-   //                      : (readReg1Sel == writeRegSel) ? writeData : w1;
-   // assign readData2 = (writeEn == 1'b0) ? w2
-   //                      : (readReg2Sel == writeRegSel) ? writeData : w2;
+   assign readData1 = (writeEn == 1'b0) ? w1
+                        : (readReg1Sel == writeRegSel) ? writeData : w1;
+   assign readData2 = (writeEn == 1'b0) ? w2
+                        : (readReg2Sel == writeRegSel) ? writeData : w2;
 endmodule
