@@ -1,4 +1,3 @@
-<include name of partners here>
 Josh Miller
 William Cooper
 Eric Schirtzinger
