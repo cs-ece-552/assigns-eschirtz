@@ -3,4 +3,5 @@
 *.mpf
 *.zip
 *.wlf
+*.vcd
 work/
