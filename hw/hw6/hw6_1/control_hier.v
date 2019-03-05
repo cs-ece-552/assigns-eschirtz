@@ -1,15 +1,14 @@
 /*
    CS/ECE 552, Spring '19
    Homework #6, Problem #1
-  
-   Wrapper module around global control logic.
 
+   Wrapper module around global control logic.
    YOU SHALL NOT EDIT THIS FILE. ANY CHANGES TO THIS FILE WILL
    RESULT IN ZERO FOR THIS PROBLEM.
 */
 module control_hier (/*AUTOARG*/
                      // Outputs
-                     err, 
+                     err,
                      RegDst,
                      SESel,
                      RegWrite,
@@ -17,6 +16,7 @@ module control_hier (/*AUTOARG*/
                      DMemEn,
                      ALUSrc2,
                      PCSrc,
+                     PCImm,
                      MemToReg,
                      DMemDump,
                      Jump,
@@ -28,11 +28,11 @@ module control_hier (/*AUTOARG*/
    // inputs
    input [4:0]  OpCode;
    input [1:0]  Funct;
-   
+
    // outputs
    output       err;
-   output       RegWrite, DMemWrite, DMemEn, ALUSrc2, PCSrc, 
-                MemToReg, DMemDump, Jump;
+   output       RegWrite, DMemWrite, DMemEn, ALUSrc2, PCSrc,
+                PCImm, MemToReg, DMemDump, Jump;
    output [1:0] RegDst;
    output [2:0] SESel;
 
@@ -50,6 +50,7 @@ module control_hier (/*AUTOARG*/
               .DMemEn                       (DMemEn),
               .ALUSrc2                      (ALUSrc2),
               .PCSrc                        (PCSrc),
+              .PCImm                        (PCImm),
               .MemToReg                     (MemToReg),
               .DMemDump                     (DMemDump),
               .Jump                         (Jump),

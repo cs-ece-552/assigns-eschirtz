@@ -1,7 +1,7 @@
 /*
    CS/ECE 552, Spring '19
    Homework #5, Problem #1
-  
+
    Random testbench for the 8x16b register file.
 */
 module control_hier_bench(/*AUTOARG*/);
@@ -10,7 +10,7 @@ module control_hier_bench(/*AUTOARG*/);
    wire       err;
    wire       RegWrite, DMemWrite,              // From top of control_hier.v
               DMemEn, ALUSrc2, PCSrc,           // From top of control_hier.v
-              MemToReg, DMemDump, Jump;         // From top of control_hier.v
+              PCImm, MemToReg, DMemDump, Jump;         // From top of control_hier.v
    wire [1:0] RegDst;                           // From top of control_hier.v
    wire [2:0] SESel;                            // From top of control_hier.v
    // End of automatics
@@ -26,6 +26,7 @@ module control_hier_bench(/*AUTOARG*/);
    wire       rst;
 
    reg        fail;
+   reg [5:0]  count;
 
    // Instantiate the module we want to verify
 
@@ -39,6 +40,7 @@ module control_hier_bench(/*AUTOARG*/);
                     .DMemEn                       (DMemEn),
                     .ALUSrc2                      (ALUSrc2),
                     .PCSrc                        (PCSrc),
+                    .PCImm                        (PCImm),
                     .MemToReg                     (MemToReg),
                     .DMemDump                     (DMemDump),
                     .Jump                         (Jump),
@@ -46,6 +48,31 @@ module control_hier_bench(/*AUTOARG*/);
                     .OpCode                       (OpCode),
                     .Funct                        (Funct));
 
-   /* YOUR CODE HERE */
+   assign               clk = DUT.clk_generator.clk;
+   assign               rst = DUT.clk_generator.rst;
 
+   initial begin
+      OpCode = 5'b00000;
+      count = 6'b000000;
+   end
+
+   // Enumerate all possible opcodes
+   always @ (posedge clk)begin
+      $display("At Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b \n", OpCode, err,
+                RegDst,
+                SESel,
+                RegWrite,
+                DMemWrite,
+                DMemEn,
+                ALUSrc2,
+                PCSrc,
+                MemToReg,
+                DMemDump,
+                Jump);
+      OpCode = OpCode + 1;
+      count = count + 1;
+      if (count == 6'b100000) begin
+         $finish;
+      end
+   end
 endmodule // control_hier_bench

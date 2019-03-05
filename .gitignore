@@ -1,0 +1,6 @@
+# Model Sim Outputs
+*.mti
+*.mpf
+*.zip
+*.wlf
+work/
