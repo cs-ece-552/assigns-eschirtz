@@ -62,8 +62,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("HALT");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'bxx ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -88,18 +88,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 00000, 0,
+                    xx,
+                    xxx,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 1);
           end
@@ -111,8 +111,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("NOP");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'bxx ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -137,18 +137,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 00001, 0,
+                    xx,
+                    xxx,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 2);
           end
@@ -160,8 +160,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("siic Rs");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'bxx ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -186,18 +186,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 00010, 0,
+                    xx,
+                    xxx,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 3);
           end
@@ -209,8 +209,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("NOP/RTI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'bxx ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -235,18 +235,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 00011, 0,
+                    xx,
+                    xxx,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 4);
           end
@@ -258,8 +258,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("J");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'b11x ||
+          RegDst != 2'bxx ||
+          SESel != 3'b11x ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -284,18 +284,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 00100, 0,
+                    xx,
+                    11x,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1);
           end else begin
             $display("	PASSED [%d]", 5);
           end
@@ -307,8 +307,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("JR");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'b10x ||
+          RegDst != 2'bxx ||
+          SESel != 3'b10x ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -333,18 +333,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 00101, 0,
+                    xx,
+                    10x,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0);
           end else begin
             $display("	PASSED [%d]", 6);
           end
@@ -356,8 +356,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("JAL");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b11 ||
-          SESel !== 3'b11x ||
+          RegDst != 2'b11 ||
+          SESel != 3'b11x ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -382,18 +382,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 00110, 0,
+                    11,
+                    11x,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1);
           end else begin
             $display("	PASSED [%d]", 7);
           end
@@ -405,8 +405,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("JALR");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b11 ||
-          SESel !== 3'b10x ||
+          RegDst != 2'b11 ||
+          SESel != 3'b10x ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -431,18 +431,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 00111, 0,
+                    11,
+                    10x,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0);
           end else begin
             $display("	PASSED [%d]", 8);
           end
@@ -454,8 +454,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SUBI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b01 ||
-          SESel !== 3'b01x ||
+          RegDst != 2'b01 ||
+          SESel != 3'b01x ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -480,18 +480,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 01000, 0,
+                    01,
+                    01x,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 9);
           end
@@ -503,8 +503,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("ADDI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b01 ||
-          SESel !== 3'b01x ||
+          RegDst != 2'b01 ||
+          SESel != 3'b01x ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -529,18 +529,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 01001, 0,
+                    01,
+                    01x,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 10);
           end
@@ -552,8 +552,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("ANDNI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b01 ||
-          SESel !== 3'bxx0 ||
+          RegDst != 2'b01 ||
+          SESel != 3'bxx0 ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -578,18 +578,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 01010, 0,
+                    01,
+                    xx0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 11);
           end
@@ -601,8 +601,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("XORI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b01 ||
-          SESel !== 3'bxx0 ||
+          RegDst != 2'b01 ||
+          SESel != 3'bxx0 ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -627,18 +627,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 01011, 0,
+                    01,
+                    xx0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 12);
           end
@@ -650,8 +650,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("BNEZ");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'b10x ||
+          RegDst != 2'bxx ||
+          SESel != 3'b10x ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -676,18 +676,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 01100, 0,
+                    xx,
+                    10x,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 13);
           end
@@ -699,8 +699,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("BEQZ");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'b10x ||
+          RegDst != 2'bxx ||
+          SESel != 3'b10x ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -725,18 +725,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 01101, 0,
+                    xx,
+                    10x,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 14);
           end
@@ -748,8 +748,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("BLTZ");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'b10x ||
+          RegDst != 2'bxx ||
+          SESel != 3'b10x ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -774,18 +774,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 01110, 0,
+                    xx,
+                    10x,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 15);
           end
@@ -797,8 +797,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("BGEZ");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'b10x ||
+          RegDst != 2'bxx ||
+          SESel != 3'b10x ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -823,18 +823,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 01111, 0,
+                    xx,
+                    10x,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 16);
           end
@@ -846,8 +846,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("ST");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'b01x ||
+          RegDst != 2'bxx ||
+          SESel != 3'b01x ||
           RegWrite !== 1'b0 ||
           DMemWrite !== 1'b1 ||
           DMemEn !== 1'b1 ||
@@ -872,18 +872,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 10000, 0,
+                    xx,
+                    01x,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 17);
           end
@@ -895,8 +895,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("LD");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'b01x ||
+          RegDst != 2'bxx ||
+          SESel != 3'b01x ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b1 ||
@@ -921,18 +921,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 10001, 0,
+                    xx,
+                    01x,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 18);
           end
@@ -944,8 +944,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SLBI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b10 ||
-          SESel !== 3'bxx1 ||
+          RegDst != 2'b10 ||
+          SESel != 3'bxx1 ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -970,18 +970,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 10010, 0,
+                    10,
+                    xx1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 19);
           end
@@ -993,8 +993,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("STU");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b10 ||
-          SESel !== 3'b01x ||
+          RegDst != 2'b10 ||
+          SESel != 3'b01x ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b1 ||
           DMemEn !== 1'b1 ||
@@ -1019,18 +1019,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 10011, 0,
+                    10,
+                    01x,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 20);
           end
@@ -1042,8 +1042,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("ROLI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'bxx0 ||
+          RegDst != 2'bxx ||
+          SESel != 3'bxx0 ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1068,18 +1068,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 10100, 0,
+                    xx,
+                    xx0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 21);
           end
@@ -1091,8 +1091,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SLLI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'bxx0 ||
+          RegDst != 2'bxx ||
+          SESel != 3'bxx0 ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1117,18 +1117,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 10101, 0,
+                    xx,
+                    xx0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 22);
           end
@@ -1140,8 +1140,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("RORI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'bxx0 ||
+          RegDst != 2'bxx ||
+          SESel != 3'bxx0 ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1166,18 +1166,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 10110, 0,
+                    xx,
+                    xx0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 23);
           end
@@ -1189,8 +1189,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SRLI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'bxx0 ||
+          RegDst != 2'bxx ||
+          SESel != 3'bxx0 ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1215,18 +1215,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 10111, 0,
+                    xx,
+                    xx0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 24);
           end
@@ -1238,8 +1238,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("LBI");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b10 ||
-          SESel !== 3'b10x ||
+          RegDst != 2'b10 ||
+          SESel != 3'b10x ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1264,18 +1264,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11000, 0,
+                    10,
+                    10x,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 25);
           end
@@ -1287,8 +1287,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("BTR");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'bxx ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'bxx ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1313,18 +1313,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11001, 0,
+                    xx,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 26);
           end
@@ -1336,8 +1336,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("ROL");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1362,18 +1362,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11010, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 27);
           end
@@ -1385,8 +1385,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SLL");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1411,18 +1411,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11010, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 28);
           end
@@ -1434,8 +1434,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("ROR");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1460,18 +1460,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11010, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 29);
           end
@@ -1483,8 +1483,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SRL");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1509,18 +1509,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11010, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 30);
           end
@@ -1532,8 +1532,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("ADD");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1558,18 +1558,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11011, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 31);
           end
@@ -1581,8 +1581,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SUB");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1607,18 +1607,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11011, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 32);
           end
@@ -1630,8 +1630,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("XOR");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1656,18 +1656,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11011, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 33);
           end
@@ -1679,8 +1679,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("ANDN");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1705,18 +1705,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11011, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 34);
           end
@@ -1728,8 +1728,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SEQ");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1754,18 +1754,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11100, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 35);
           end
@@ -1777,8 +1777,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SLT");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1803,18 +1803,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11101, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 36);
           end
@@ -1826,8 +1826,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SLE");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1852,18 +1852,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11110, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 37);
           end
@@ -1875,8 +1875,8 @@ module control_hier_bench_csv(/*AUTOARG*/);
         $display("SCO");
         if(
           err !== 1'b0 ||
-          RegDst !== 2'b00 ||
-          SESel !== 3'bxxx ||
+          RegDst != 2'b00 ||
+          SESel != 3'bxxx ||
           RegWrite !== 1'b1 ||
           DMemWrite !== 1'b0 ||
           DMemEn !== 1'b0 ||
@@ -1901,18 +1901,18 @@ module control_hier_bench_csv(/*AUTOARG*/);
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("	EXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\n", 11111, 0,
+                    00,
+                    xxx,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0);
           end else begin
             $display("	PASSED [%d]", 38);
           end

@@ -72,8 +72,8 @@ with open('controlLogic.csv', mode='r', encoding='utf-8-sig') as csv_file:
         $display("{row['Syntax']}");
         if(
           err !== 1'b{row['err']} ||
-          RegDst !== 2'b{row['RegDst']} ||
-          SESel !== 3'b{row['SESel']} ||
+          RegDst != 2'b{row['RegDst']} ||
+          SESel != 3'b{row['SESel']} ||
           RegWrite !== 1'b{row['RegWrite']} ||
           DMemWrite !== 1'b{row['DMemWrite']} ||
           DMemEn !== 1'b{row['DMemEn']} ||
@@ -98,18 +98,18 @@ with open('controlLogic.csv', mode='r', encoding='utf-8-sig') as csv_file:
                     DMemDump,
                     Jump,
                     PCImm);
-          $display("\tEXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\\n", OpCode, err,
-                    RegDst,
-                    SESel,
-                    RegWrite,
-                    DMemWrite,
-                    DMemEn,
-                    ALUSrc2,
-                    PCSrc,
-                    MemToReg,
-                    DMemDump,
-                    Jump,
-                    PCImm);
+          $display("\tEXPECT: Opcode: %b   ->   Error: %b, RegDst: %b, SESel: %b, RegWrite: %b, DMemWrite: %b, DMemEn: %b, ALUSrc2: %b, PCSrc: %b, MemToReg: %b, DMemDump: %b, Jump: %b, PCImm: %b\\n", {row['OpCode']}, {row['err']},
+                    {row['RegDst']},
+                    {row['SESel']},
+                    {row['RegWrite']},
+                    {row['DMemWrite']},
+                    {row['DMemEn']},
+                    {row['ALUSrc2']},
+                    {row['PCSrc']},
+                    {row['MemToReg']},
+                    {row['DMemDump']},
+                    {row['Jump']},
+                    {row['PCImm']});
           end else begin
             $display("\tPASSED [%d]", {line_count + 1});
           end
