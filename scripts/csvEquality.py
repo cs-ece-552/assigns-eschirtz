@@ -64,9 +64,15 @@ with open('controlLogic.csv', mode='r', encoding='utf-8-sig') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     line_count = 0
     for row in csv_reader:
+        # handle special function case
+        funct = row['Funct'].strip()
+        print(f"--{funct}--")
+        if not funct:
+            funct = "xx"
+
         f.write(f"""
       OpCode = 5'b{row['OpCode']};
-      Funct = 2'bxx;
+      Funct = 2'b{funct};
       repeat(2) @(posedge clk);
       @(posedge clk)begin
         $display("{row['Syntax']}");

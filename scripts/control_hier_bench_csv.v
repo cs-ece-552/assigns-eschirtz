@@ -1330,7 +1330,7 @@ module control_hier_bench_csv(/*AUTOARG*/);
           end
         end
       OpCode = 5'b11010;
-      Funct = 2'bxx;
+      Funct = 2'b00;
       repeat(2) @(posedge clk);
       @(posedge clk)begin
         $display("ROL");
@@ -1379,7 +1379,7 @@ module control_hier_bench_csv(/*AUTOARG*/);
           end
         end
       OpCode = 5'b11010;
-      Funct = 2'bxx;
+      Funct = 2'b01;
       repeat(2) @(posedge clk);
       @(posedge clk)begin
         $display("SLL");
@@ -1428,7 +1428,7 @@ module control_hier_bench_csv(/*AUTOARG*/);
           end
         end
       OpCode = 5'b11010;
-      Funct = 2'bxx;
+      Funct = 2'b10;
       repeat(2) @(posedge clk);
       @(posedge clk)begin
         $display("ROR");
@@ -1477,7 +1477,7 @@ module control_hier_bench_csv(/*AUTOARG*/);
           end
         end
       OpCode = 5'b11010;
-      Funct = 2'bxx;
+      Funct = 2'b11;
       repeat(2) @(posedge clk);
       @(posedge clk)begin
         $display("SRL");
@@ -1526,7 +1526,7 @@ module control_hier_bench_csv(/*AUTOARG*/);
           end
         end
       OpCode = 5'b11011;
-      Funct = 2'bxx;
+      Funct = 2'b00;
       repeat(2) @(posedge clk);
       @(posedge clk)begin
         $display("ADD");
@@ -1575,7 +1575,7 @@ module control_hier_bench_csv(/*AUTOARG*/);
           end
         end
       OpCode = 5'b11011;
-      Funct = 2'bxx;
+      Funct = 2'b01;
       repeat(2) @(posedge clk);
       @(posedge clk)begin
         $display("SUB");
@@ -1624,7 +1624,7 @@ module control_hier_bench_csv(/*AUTOARG*/);
           end
         end
       OpCode = 5'b11011;
-      Funct = 2'bxx;
+      Funct = 2'b10;
       repeat(2) @(posedge clk);
       @(posedge clk)begin
         $display("XOR");
@@ -1673,7 +1673,7 @@ module control_hier_bench_csv(/*AUTOARG*/);
           end
         end
       OpCode = 5'b11011;
-      Funct = 2'bxx;
+      Funct = 2'b11;
       repeat(2) @(posedge clk);
       @(posedge clk)begin
         $display("ANDN");
