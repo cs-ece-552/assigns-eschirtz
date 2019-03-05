@@ -1,7 +1,7 @@
 /*
    CS/ECE 552, Spring '19
    Homework #5, Problem #2
-  
+
    Wrapper module around 8x16b register file with bypassing.
 
    YOU SHALL NOT EDIT THIS FILE. ANY CHANGES TO THIS FILE WILL
@@ -9,7 +9,7 @@
 */
 module rf_bypass_hier (
                        // Outputs
-                       readData1, readData2, 
+                       readData1, readData2,
                        // Inputs
                        readReg1Sel, readReg2Sel, writeRegSel, writeData, writeEn
                        );

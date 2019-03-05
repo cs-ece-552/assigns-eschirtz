@@ -1,7 +1,7 @@
 /*
    CS/ECE 552, Spring '19
    Homework #5, Problem #1
-  
+
    Random testbench for the 8x16b register file.
 */
 module rf_bench(/*AUTOARG*/);

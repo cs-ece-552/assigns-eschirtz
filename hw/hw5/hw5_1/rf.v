@@ -7,8 +7,6 @@
    a write enable, a reset, and a clock input.
    All register state changes occur on the rising edge of the clock.
 */
-
-// TODO: Add default error statement, and handle err setting.
 module rf (
            // Outputs
            readData1, readData2, err,

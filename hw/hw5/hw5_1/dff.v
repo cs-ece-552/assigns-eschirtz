@@ -1,7 +1,7 @@
 /*
    CS/ECE 552, Spring '19
    Homework #5, Problem #1
-  
+
    This module creates a 1-bit D-flipflop (DFF).
 
    YOU SHALL NOT EDIT THIS FILE. ANY CHANGES TO THIS FILE WILL
